@@ -1,0 +1,61 @@
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\obj\x86\Debug\Super Coil Protector (Home Copy).csprojResolveAssemblyReference.cache
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\background.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\bullet.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\coil in machine 2.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\coil out machine.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\coil.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\enemy.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\healthSquare.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\laser1.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\laser2.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\laser3.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\loop.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\player01.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\preview_170.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\repair_spanner.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\spriteFont.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\turret1.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\turret2.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\turret3.xnb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Super Coil Protector (Home Copy).exe
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Super Coil Protector (Home Copy).pdb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\MonoGame.Framework.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.XAudio2.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.Direct3D11.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.DXGI.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.Direct2D1.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.XInput.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.RawInput.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.Direct3D9.dll
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\MonoGame.Framework.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.XAudio2.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.Direct3D11.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.DXGI.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.Direct2D1.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.XInput.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.RawInput.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\SharpDX.Direct3D9.xml
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\obj\x86\Debug\Super Coil Protector (Home Copy).exe
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\obj\x86\Debug\Super Coil Protector (Home Copy).pdb
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\player01.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\background.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\bullet.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\coil in machine 2.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\coil out machine.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\coil.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\enemy.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\healthSquare.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\laser1.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\laser2.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\laser3.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\loop.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\preview_170.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\repair_spanner.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\turret1.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\turret2.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\turret3.png
+D:\Users\Matthew\Documents\Uni\08241\locationserver\Super Coil Protector (Home Copy)\Super Coil Protector (Home Copy)\bin\Windows\Debug\Content\spriteFont.spritefont

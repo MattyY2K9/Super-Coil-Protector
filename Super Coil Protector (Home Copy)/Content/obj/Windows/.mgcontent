@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/background.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/bullet.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/coil in machine 2.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/coil out machine.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/coil.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/enemy.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/healthSquare.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/laser1.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/laser2.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/laser3.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/loop.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/player01.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/preview_170.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/repair_spanner.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/spriteFont.spritefont</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/turret1.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/turret2.png</File>
+    <File>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/turret3.png</File>
+  </SourceFiles>
+</SourceFileCollection>

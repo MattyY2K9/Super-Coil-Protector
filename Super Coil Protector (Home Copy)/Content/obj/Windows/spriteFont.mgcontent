@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/spriteFont.spritefont</SourceFile>
+  <SourceTime>2015-06-19T15:03:27.6379457+01:00</SourceTime>
+  <DestFile>D:/Users/Matthew/Documents/Uni/08241/locationserver/Super Coil Protector (Home Copy)/Super Coil Protector (Home Copy)/Content/bin/Windows/spriteFont.xnb</DestFile>
+  <DestTime>2015-06-19T15:03:31.7004727+01:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2015-04-29T18:14:44+01:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2015-04-29T18:14:44+01:00</ProcessorTime>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
