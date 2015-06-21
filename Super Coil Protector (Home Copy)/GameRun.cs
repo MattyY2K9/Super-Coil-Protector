@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework;
+using Super_Coil_Protector__Home_Copy_;
 
 namespace Super_Coil_Protoctor
 {
@@ -19,6 +20,7 @@ namespace Super_Coil_Protoctor
             reset
         }
 
+        Level level;
         List<Turrets> turretList;
         List<Enemy> enemyList;
         List<Loop> loopList;
@@ -28,6 +30,22 @@ namespace Super_Coil_Protoctor
         Machine machine;
         Player player;
         KeyboardState keyboardState;
+
+        // Textures.
+        Texture2D enemyTexture;
+        Texture2D projectileTexture;
+        Texture2D turret1;
+        Texture2D turret2;
+        Texture2D turret3;
+        Texture2D loop;
+        Texture2D block;
+        Texture2D healthTexture;
+        Texture2D machineCoil;
+        Texture2D machineNoCoil;
+        Texture2D Background;     
+        Sprite repairSpanner;
+
+        private SpriteFont font;
 
         int enemyCount;
         int enemyHealth;
@@ -41,34 +59,15 @@ namespace Super_Coil_Protoctor
         int waveCooldown;
 
         // Stops player buying multiple turrets by accident.
-        bool keyUp;
+        bool keyUp;  
 
-        // Textures.
-        Texture2D Background;
-        Texture2D enemyTexture;
-        Texture2D projectileTexture;
-        Texture2D turret1;
-        Texture2D turret2;
-        Texture2D turret3;
-        Texture2D loop;
-        Texture2D block;
-        Texture2D healthTexture;
-        Texture2D machineCoil;
-        Texture2D machineNoCoil;
-        Sprite repairSpanner;
-
-        private SpriteFont font;
-
-        public GameRun()
+        public GameRun(Level inLevel, Texture2D[] textures, Sprite inSpanner, SpriteFont inFont)
         {
             player = new Player();
             player.spriteRectangle = new Rectangle(0, 0, 96, 128);
-            coil = new Coil(new Rectangle(-200, 100, 25, 43));
-            machine = new Machine(new Rectangle(Game1.window_width / 2 - 50, Game1.window_height - 273, 83, 243));
             enemyCount = 1;
             enemyHealth = 5;
             gameState = state.normal;
-            repairSpanner = new Sprite();
 
             waveCooldown = 100;
             resetCount = 0;
@@ -77,49 +76,39 @@ namespace Super_Coil_Protoctor
 
             keyUp = false;
 
+            level = inLevel;
+            coil = level.coil;
+            machine = level.machine;
+
             // Initialise lists.
             enemyList = new List<Enemy>();
             turretList = new List<Turrets>();
             loopList = new List<Loop>();
-            blockList = new Blocks[11];
-            enemySpawnList = new Vector2[] { new Vector2(0, 100), new Vector2(0, 520), new Vector2(0, 750), new Vector2(0, 290),
-                                             new Vector2(Game1.window_width,750), new Vector2(Game1.window_width,520), new Vector2(Game1.window_width,350),new Vector2(Game1.window_width,200)};
-        }
+            blockList = level.blockArray;
+            enemySpawnList = level.enemySpawnList;
 
-        public void loadTextures(ContentManager Content)
-        {
-            player.spriteTexture = Content.Load<Texture2D>("player01.png");
-            projectileTexture = Content.Load<Texture2D>("laser1.png");
-            turret1 = Content.Load<Texture2D>("turret1.png");
-            turret2 = Content.Load<Texture2D>("turret2.png");
-            turret3 = Content.Load<Texture2D>("turret3.png");
-            loop = Content.Load<Texture2D>("loop.png");
-            Background = Content.Load<Texture2D>("background.png");
-            block = Content.Load<Texture2D>("preview_170.png");
-            enemyTexture = Content.Load<Texture2D>("enemy.png");
-            healthTexture = Content.Load<Texture2D>("healthSquare.png");
-            // Coil/Machine.
-            coil.spriteTexture = Content.Load<Texture2D>("coil.png");
-            font = Content.Load<SpriteFont>("spriteFont");
-            machineCoil = Content.Load<Texture2D>("coil in machine 2.png");
-            machineNoCoil = Content.Load<Texture2D>("coil out machine.png");
-            machine.spriteTexture = machineCoil;
-            // Spanner.
-            repairSpanner.spriteTexture = Content.Load<Texture2D>("repair_spanner.png");
-            repairSpanner.spriteRectangle = new Rectangle(-5000, -5000, 193, 71);
+            // Textures.
+            enemyTexture = textures[0];
+            projectileTexture = textures[1];
+            turret1 = textures[2];
+            turret2 = textures[3];
+            turret3 = textures[4];
+            loop = textures[5];
+            block = textures[6];
+            healthTexture = textures[7];
+            machineCoil = textures[8];
+            machineNoCoil = textures[9];
+            coil.spriteTexture = textures[10];
+            player.spriteTexture = textures[11];
 
-            player.setBullets(projectileTexture);
-            blockList[0] = new Blocks(new Rectangle(0, 200, 300, 30), block);
-            blockList[1] = new Blocks(new Rectangle(0, 620, 650, 30), block);
-            blockList[2] = new Blocks(new Rectangle(0, Game1.window_height - 30, Game1.window_width, 30), block);
-            blockList[3] = new Blocks(new Rectangle(0, 850, 850, 30), block);
-            blockList[4] = new Blocks(new Rectangle(0, 390, 450, 30), block);
-            blockList[5] = new Blocks(new Rectangle(Game1.window_width - 850, 850, 850, 30), block);
-            blockList[6] = new Blocks(new Rectangle(Game1.window_width - 650, 620, 650, 30), block);
-            blockList[7] = new Blocks(new Rectangle(Game1.window_width - 450, 390, 450, 30), block);
-            blockList[8] = new Blocks(new Rectangle(Game1.window_width - 300, 200, 300, 30), block);
-            blockList[9] = new Blocks(new Rectangle(Game1.window_width / 2 - 100, 390, 200, 30), block);
-            blockList[10] = new Blocks(new Rectangle(Game1.window_width / 2 - 100, 620, 200, 30), block);
+            Background = level.background;
+
+            repairSpanner = inSpanner;
+            repairSpanner.spriteRectangle.Width = 193;
+            repairSpanner.spriteRectangle.Height = 71;
+            font = inFont;
+
+            player.setBullets(projectileTexture);            
 
             Reset();
         }
@@ -132,8 +121,7 @@ namespace Super_Coil_Protoctor
             //turret rapairs
             foreach (Turrets turret in turretList)
             {
-                if (player.spriteRectangle.Intersects(turret.spriteRectangle))
-                    if (keyboardState.IsKeyDown(Keys.R))
+                    if (keyboardState.IsKeyDown(Keys.R) && player.spriteRectangle.Intersects(turret.spriteRectangle))
                     {
                         repairSpanner.spriteRectangle.X = turret.spriteRectangle.X;
                         repairSpanner.spriteRectangle.Y = turret.spriteRectangle.Y - 65;

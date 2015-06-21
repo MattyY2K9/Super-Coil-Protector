@@ -43,8 +43,11 @@
     <Compile Include="Enemy.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameRun.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="Level1.cs" />
     <Compile Include="Loop.cs" />
     <Compile Include="Machine.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="Pickups.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />

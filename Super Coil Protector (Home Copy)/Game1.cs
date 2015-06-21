@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Super_Coil_Protector__Home_Copy_;
 
 namespace Super_Coil_Protoctor
 {
@@ -14,12 +15,12 @@ namespace Super_Coil_Protoctor
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        GameRun game;
+        Menu menu;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            game = new GameRun();
+            menu = new Menu();
             graphics.PreferredBackBufferHeight = window_height;
             graphics.PreferredBackBufferWidth = window_width;
         }
@@ -33,7 +34,6 @@ namespace Super_Coil_Protoctor
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
@@ -48,7 +48,7 @@ namespace Super_Coil_Protoctor
 
             // TODO: use this.Content to load your game content here
 
-            game.loadTextures(Content);
+            menu.loadTextures(Content);
         }
 
         /// <summary>
@@ -67,12 +67,11 @@ namespace Super_Coil_Protoctor
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // TODO: Add your update logic here
-            game.update();
-
             KeyboardState keystate = Keyboard.GetState();
             if (keystate.IsKeyDown(Keys.Escape))
                 Exit();
+
+            menu.update(keystate);
 
             base.Update(gameTime);
         }
@@ -87,7 +86,7 @@ namespace Super_Coil_Protoctor
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            game.draw(spriteBatch);
+            menu.draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);
         }
