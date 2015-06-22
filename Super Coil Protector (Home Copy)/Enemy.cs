@@ -153,12 +153,17 @@ namespace Super_Coil_Protoctor
         /// <summary>
         /// Allows enemy to take damage.
         /// Checks whether the enemy has died as a result of the damage.
+        /// Also adds the damage taken to the players money.
         /// </summary>
         /// <param name="Damage"></param>
         public void TakeDamage(int Damage)
         {
+            int tempHealth = health;
             health -= Damage;
-            player.addFunds(Damage);
+            // Makes the money added to player the same amount as the damage given to the enemy.
+            if (health > 0)
+                tempHealth -= health;
+            player.addFunds(tempHealth);
             checkDead();
         }
         /// <summary>
