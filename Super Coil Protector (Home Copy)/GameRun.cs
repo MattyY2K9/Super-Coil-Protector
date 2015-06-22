@@ -108,7 +108,8 @@ namespace Super_Coil_Protoctor
             repairSpanner.spriteRectangle.Height = 71;
             font = inFont;
 
-            player.setBullets(projectileTexture);            
+            player.setBullets(projectileTexture);
+            machine.setMachineTexture(machineCoil, machineNoCoil);      
 
             Reset();
         }

@@ -20,7 +20,7 @@ namespace Super_Coil_Protector__Home_Copy_
         // Texture list to be passed to gameRun.
         Texture2D[] gameTextures;
         Sprite repairSpanner;
-
+        Button playButton;
 
         Level1 level;
 
@@ -56,18 +56,25 @@ namespace Super_Coil_Protector__Home_Copy_
 
             level = new Level1(gameTextures[6]);
             level.setBackground(Content);
+
+            playButton = new Button("Play", gameTextures[7], new Rectangle(Game1.window_width / 2, Game1.window_height / 2, 100, 50), Color.Yellow);
         }
 
-        public void update(KeyboardState keystate)
+        public void update(KeyboardState keystate, Game1 game1)
         {
-            if (keystate.IsKeyDown(Keys.S))
-            {
-                gameRun = new GameRun(level, gameTextures, repairSpanner, font);
-                isGameActive = true;
-            }
-
             if (isGameActive)
                 gameRun.update();
+            else 
+            {
+                game1.IsMouseVisible = true;
+                if (playButton.update())
+                {
+                    gameRun = new GameRun(level, gameTextures, repairSpanner, font);
+                    isGameActive = true;
+                    game1.IsMouseVisible = false;
+                }
+                
+            }
         }
 
         public void draw(SpriteBatch spritebatch)
@@ -75,7 +82,7 @@ namespace Super_Coil_Protector__Home_Copy_
             if (isGameActive)
                 gameRun.draw(spritebatch);
             else
-                spritebatch.DrawString(font, "Press [s] to start game", new Microsoft.Xna.Framework.Vector2(Game1.window_width / 2 - 50, Game1.window_height / 2), Color.Red);
+                playButton.draw(spritebatch, font);
         }
     }
 }

@@ -71,7 +71,7 @@ namespace Super_Coil_Protoctor
             if (keystate.IsKeyDown(Keys.Escape))
                 Exit();
 
-            menu.update(keystate);
+            menu.update(keystate, this);
 
             base.Update(gameTime);
         }
