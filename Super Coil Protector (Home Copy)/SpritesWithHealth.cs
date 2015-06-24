@@ -12,6 +12,9 @@ namespace Super_Coil_Protoctor
     {
         protected Texture2D healthTexture;
 
+        // To make the collision detection appear closer to the sprite.
+        public Rectangle actualRectangle;
+
         public int health;
         protected int maxHealth;
         public Vector2 velocity;

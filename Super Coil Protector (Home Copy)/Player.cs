@@ -52,6 +52,9 @@ namespace Super_Coil_Protoctor
 
         public void movement(KeyboardState keystate, List<Enemy> enemyList, Blocks[] blockList, Coil coil, SpriteFont font)
         {
+            // Updates the actual rectangle.
+            actualRectangle = new Rectangle(spriteRectangle.X + 20, spriteRectangle.Y + 10, 40, spriteRectangle.Height - 15);
+
             // Sets initial velocity.
             velocity.X = 0;
             bool gravityEffect = true;
@@ -131,7 +134,7 @@ namespace Super_Coil_Protoctor
 
             foreach (Enemy e in enemyList)
             {
-                if (e.collisionRect.Intersects(spriteRectangle))
+                if (e.collisionRect.Intersects(actualRectangle))
                     health--;
             }
 

@@ -63,8 +63,11 @@ namespace Super_Coil_Protector__Home_Copy_
         public void update(KeyboardState keystate, Game1 game1)
         {
             if (isGameActive)
-                gameRun.update();
-            else 
+            {
+                if (!gameRun.update())
+                    isGameActive = false;
+            }
+            else
             {
                 game1.IsMouseVisible = true;
                 if (playButton.update())
@@ -73,7 +76,7 @@ namespace Super_Coil_Protector__Home_Copy_
                     isGameActive = true;
                     game1.IsMouseVisible = false;
                 }
-                
+
             }
         }
 

@@ -19,9 +19,12 @@ namespace Super_Coil_Protoctor
         public override void draw(SpriteBatch spriteBatch)
         {
             int count = (int)spriteRectangle.Width / 40;
+            int overlap = spriteRectangle.Width - (count * 40);
             for (int i = 0; i < count; i++)
             {
-                spriteBatch.Draw(spriteTexture, new Rectangle(spriteRectangle.X + (40 * i), spriteRectangle.Y, 40, 30), new Rectangle(100, 100, 100, 100), Color.White);
+                spriteBatch.Draw(spriteTexture, new Rectangle(spriteRectangle.X + (40 * i), spriteRectangle.Y, 40, 30), new Rectangle(45, 35, 100, 100), Color.White);
+                if(i == count - 1)
+                    spriteBatch.Draw(spriteTexture, new Rectangle(spriteRectangle.X + (40 * (i + 1)), spriteRectangle.Y,overlap, 30), new Rectangle(45,35,overlap,100),Color.White);
             }
             base.draw(spriteBatch);
         }
@@ -29,7 +32,7 @@ namespace Super_Coil_Protoctor
         public bool collisionDetection(SpritesWithHealth sprite)
         {
             // This sets a rectangle at the players feet to see if he lands on the block.
-            Rectangle intersectsRectangle = new Rectangle(sprite.spriteRectangle.X, sprite.spriteRectangle.Y + sprite.spriteRectangle.Height - 5, sprite.spriteRectangle.Width, 5);
+            Rectangle intersectsRectangle = new Rectangle(sprite.actualRectangle.X, sprite.actualRectangle.Y + sprite.actualRectangle.Height - 5, sprite.actualRectangle.Width, 5);
 
             if (spriteRectangle.Intersects(intersectsRectangle))
             {

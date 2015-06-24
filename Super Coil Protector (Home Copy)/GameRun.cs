@@ -114,7 +114,7 @@ namespace Super_Coil_Protoctor
             Reset();
         }
 
-        public void update()
+        public bool update()
         {
             keyboardState = Keyboard.GetState();
             player.movement(keyboardState, enemyList, blockList, coil, font);
@@ -215,7 +215,10 @@ namespace Super_Coil_Protoctor
             if (resetCount > 100)
             {
                 Reset();
+                return false;
             }
+
+            return true;
         }
 
         private void Reset()

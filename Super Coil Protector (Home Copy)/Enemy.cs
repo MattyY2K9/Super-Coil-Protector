@@ -23,7 +23,6 @@ namespace Super_Coil_Protoctor
         private Machine machine;
         private Coil coil;
         private int moveSpeed;
-        private bool alive = true;
         private int damage;
 
         // For loops.
@@ -72,6 +71,9 @@ namespace Super_Coil_Protoctor
         /// </summary>
         public void Update(Blocks[] blockList)
         {
+            // Updates the actual rectangle.
+            actualRectangle = new Rectangle(spriteRectangle.X + 15, spriteRectangle.Y + 10, spriteRectangle.Width - 30, spriteRectangle.Height - 15);
+
             // Updates if enemy is not attached to a noose.
             if (!attached)
             {
@@ -174,7 +176,6 @@ namespace Super_Coil_Protoctor
         {
             if (health <= 0)
             {
-                alive = false;
                 die();
             }
         }
