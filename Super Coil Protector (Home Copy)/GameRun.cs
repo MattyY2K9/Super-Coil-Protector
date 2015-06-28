@@ -329,7 +329,7 @@ namespace Super_Coil_Protoctor
 
             foreach (Blocks b in blockList)
                 b.draw(spriteBatch);
-
+            
         }
     }
 }

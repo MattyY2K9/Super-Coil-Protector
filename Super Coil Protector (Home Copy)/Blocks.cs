@@ -10,10 +10,28 @@ namespace Super_Coil_Protoctor
 {
     public class Blocks : Sprite
     {
+        public struct pointsOfInterest
+        {
+
+            public int position;
+            public bool left;
+
+            public pointsOfInterest(int inPosition, bool inLeft)
+            {
+                position = inPosition;
+                left = inLeft;
+            }
+        }
+
+        public List<pointsOfInterest> jumpPoints;
+        public List<pointsOfInterest> dropPoints;
+
         public Blocks(Rectangle rectangle, Texture2D texture)
         {
             spriteRectangle = rectangle;
             spriteTexture = texture;
+            jumpPoints = new List<pointsOfInterest>();
+            dropPoints = new List<pointsOfInterest>();
         }
 
         public override void draw(SpriteBatch spriteBatch)
@@ -40,6 +58,16 @@ namespace Super_Coil_Protoctor
                 return true;
             }
             return false;
+        }
+
+        public void addJumps(int inPosition, bool left)
+        {
+            jumpPoints.Add(new pointsOfInterest(inPosition, left));
+        }
+
+        public void addDrops(int inPosition, bool left)
+        {
+            dropPoints.Add(new pointsOfInterest(inPosition, left));
         }
     }
 }
